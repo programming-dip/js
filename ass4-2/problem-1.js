@@ -1,8 +1,8 @@
-function calculateVAT(basePrice) {
+function calculateVAT( price) {
     
-    if (typeof basePrice !== 'number' || basePrice<0) {
+    if (typeof  price !== 'number' ||  price < 0) {
         return "Invalid";
     }
-    const vat = basePrice * 0.075;
+    const vat =  price * 0.075;
     return vat;
 }                                                                                                                

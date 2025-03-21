@@ -1,13 +1,13 @@
-function willSuccess(numArr){
-    if (Array.isArray(numArr) === false){
+function willSuccess(marks){
+    if (Array.isArray(marks) === false){
         return "Invalid";
     }
 
     let passCount = 0;
     let failCount = 0;
 
-    for (const number of numArr){
-        if (number < 50){
+    for (const mark of marks){
+        if (mark < 50){
             failCount++;
         }else {
             passCount++;
